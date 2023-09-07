@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavigationContainer } from "@react-navigation/native"; // как провайдер в реакте обвертка BrowserRouter
-
+import { NavigationContainer } from "@react-navigation/native";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 
@@ -19,7 +18,6 @@ export default function App() {
         await Font.loadAsync({
           "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
           "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
-       
         });
 
         await SplashScreen.hideAsync();

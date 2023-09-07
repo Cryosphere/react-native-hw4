@@ -99,11 +99,11 @@ export default function RegistrationScreen({ navigation }) {
                 </TouchableOpacity>
               </View>
               <View style={styles.header}>
-                <Text style={styles.headerTitle}>Регистрация</Text>
+                <Text style={styles.headerTitle}>Реєстрація</Text>
               </View>
               <View style={{ marginBottom: 16 }}>
                 <TextInput
-                  placeholder="Логин"
+                  placeholder="Логін"
                   value={state.login}
                   style={styles.input}
                   textAlign={"left"}
@@ -115,7 +115,7 @@ export default function RegistrationScreen({ navigation }) {
               </View>
               <View style={{ marginBottom: 16 }}>
                 <TextInput
-                  placeholder="Адрес электронной почты"
+                  placeholder="Адреса електронної пошти"
                   value={state.email}
                   style={styles.input}
                   textAlign={"left"}
@@ -134,7 +134,7 @@ export default function RegistrationScreen({ navigation }) {
                 <View style={styles.showPassThmb}>
                   <TouchableOpacity activeOpacity={0.6} onPress={toglePass}>
                     <Text style={styles.showPass}>
-                      {!showPass ? "Показать" : "Скрыть"}
+                      {!showPass ? "Показати" : "Сховати"}
                     </Text>
                   </TouchableOpacity>
                 </View>
@@ -157,13 +157,13 @@ export default function RegistrationScreen({ navigation }) {
                     style={styles.btn}
                     onPress={() => submitForm()}
                   >
-                    <Text style={styles.btnTitle}>Зарегистрироваться</Text>
+                    <Text style={styles.btnTitle}>Зареєструватися</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     activeOpacity={0.6}
                     onPress={() => navigation.navigate({ name: "Login" })}
                   >
-                    <Text style={styles.regTitle}>Уже есть аккаунт? Войти</Text>
+                    <Text style={styles.regTitle}>Вже є акаунт? Увійти</Text>
                   </TouchableOpacity>
                 </>
               )}

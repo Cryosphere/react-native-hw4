@@ -26,7 +26,7 @@ const useRoute = () => {
           component={Home}
         ></GeneralStack.Screen>
         <GeneralStack.Screen
-          options={{ title: "Комментарии", headerTitleAlign: "center" }}
+          options={{ title: "Коментарі", headerTitleAlign: "center" }}
           name="Coments"
           component={ComentsScreen}
         />

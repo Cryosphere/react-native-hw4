@@ -81,6 +81,6 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     color: "#212121",
     fontFamily: "Roboto-Regular",
-    textDecoration: "underlin",
+    textDecorationLine: "underline",
   },
 });

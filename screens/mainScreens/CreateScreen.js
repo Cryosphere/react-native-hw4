@@ -80,7 +80,7 @@ export default function CreateScreen({ navigation }) {
                 <Image source={camera} style={styles.cameraIcon} />
               </View>
               <View>
-                <Text style={styles.addTitile}>Загрузите фото</Text>
+                <Text style={styles.addTitile}>Завантажте фото</Text>
               </View>
             </>
           )}
@@ -94,7 +94,7 @@ export default function CreateScreen({ navigation }) {
           >
             <View style={{ marginBottom: 16 }}>
               <TextInput
-                placeholder="Название..."
+                placeholder="Назва..."
                 value={post.name}
                 style={styles.input}
                 textAlign={"left"}
@@ -106,7 +106,7 @@ export default function CreateScreen({ navigation }) {
             </View>
             <View style={{ marginBottom: 32, position: "relative" }}>
               <TextInput
-                placeholder="Местность..."
+                placeholder="Місцевість..."
                 value={post.location}
                 style={styles.input}
                 textAlign={"left"}
@@ -123,7 +123,7 @@ export default function CreateScreen({ navigation }) {
           style={styles.subBtn}
           onPress={() => submitForm()}
         >
-          <Text style={styles.btnTitle}>Опубликовать</Text>
+          <Text style={styles.btnTitle}>Опубликувати</Text>
         </TouchableOpacity>
 
         {!isKeyboardVisible && (

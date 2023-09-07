@@ -158,7 +158,7 @@ export default function CommentsScreen({ navigation }) {
           >
             <View style={{ ...styles.inputThmb, marginTop: "auto" }}>
               <TextInput
-                placeholder="Комментировать..."
+                placeholder="Коментувати..."
                 value={comment.comment}
                 style={styles.input}
                 textAlign={"left"}

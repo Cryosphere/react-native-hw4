@@ -71,19 +71,6 @@ export default function PostsScreen({ navigation }) {
           );
         }}
       />
-      {/* <ScrollView showsVerticalScrollIndicator={false}>
-        {posts &&
-          posts.map(({ id, image, title, comments, location }) => (
-            <MainPost
-              navigation={navigation}
-              key={id}
-              title={title}
-              image={image}
-              coments={comments}
-              location={location}
-            />
-          ))}
-      </ScrollView> */}
     </View>
   );
 }
@@ -95,7 +82,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     flex: 1,
     justifyContent: "flex-start",
-    // alignItems: "flex-start",
   },
   userThmb: {
     flexDirection: "row",
@@ -166,6 +152,6 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     color: "#212121",
     fontFamily: "Roboto-Regular",
-    textDecoration: "underlin",
+    textDecorationLine: "underline",
   },
 });

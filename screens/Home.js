@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import { TouchableOpacity, Image } from "react-native";
 
 //screens
@@ -26,16 +26,15 @@ export default function Home({ navigation, route }) {
       }}
     >
       <MainTab.Screen
-        // syyle={{ display: "none" }}
         name="PostsScreen"
         options={{
-          title: "Публикации",
+          title: "Публикації",
           headerTitleAlign: "center",
           tabBarIcon: ({ focused, size, color }) => (
-            <MaterialIcons
-              name="view-list"
-              size={focused ? 44 : 34}
-              color={focused ? "orange" : color}
+            <Ionicons
+              name="grid-outline"
+              size={24}
+              color="rgba(33, 33, 33, 0.8)"
             />
           ),
           headerRight: () => (
@@ -55,14 +54,10 @@ export default function Home({ navigation, route }) {
         options={{
           tabBarStyle: { display: "none" },
           tabBarVisible: false,
-          title: "Создать публикацию",
+          title: "Створити публикацію",
           headerTitleAlign: "center",
           tabBarIcon: ({ focused, size, color }) => (
-            <MaterialIcons
-              name="add-circle"
-              size={focused ? 44 : 34}
-              color={focused ? "orange" : color}
-            />
+            <Ionicons name="add-circle-sharp" size={30} color="#FF6C00" />
           ),
           headerLeft: () => (
             <TouchableOpacity
@@ -81,10 +76,10 @@ export default function Home({ navigation, route }) {
           headerShown: false,
           tabBarVisible: true,
           tabBarIcon: ({ focused, size, color }) => (
-            <MaterialIcons
-              name="account-circle"
-              size={focused ? 44 : 34}
-              color={focused ? "orange" : color}
+            <Ionicons
+              name="person-outline"
+              size={24}
+              color="rgba(33, 33, 33, 0.8)"
             />
           ),
         }}

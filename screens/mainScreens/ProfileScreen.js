@@ -100,26 +100,6 @@ export default function ProfileScreen({ navigation }) {
             Natali Romanova
           </Text>
         </View>
-        {/* <FlatList
-          style={{ width: dimensions }}
-          data={posts}
-          showsVerticalScrollIndicator={false}
-          keyExtractor={(item, indx) => indx.toString()}
-          renderItem={({ item }) => {
-            const { id, image, title, comments, location, like } = item;
-            return (
-              <ProfilePost
-                navigation={navigation}
-                key={id}
-                title={title}
-                image={image}
-                coments={comments}
-                location={location}
-                like={like}
-              />
-            );
-          }}
-        /> */}
         <ScrollView
           showsVerticalScrollIndicator={false}
           style={{ width: dimensions }}
@@ -222,6 +202,6 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     color: "#212121",
     fontFamily: "Roboto-Regular",
-    textDecoration: "underlin",
+    textDecorationLine: "underline",
   },
 });

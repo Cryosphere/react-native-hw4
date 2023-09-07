@@ -2,7 +2,7 @@ export default [
   {
     id: "1",
     image: require("../../assets/images/postImg1.png"),
-    title: "Лес",
+    title: "Ліс",
     comments: 8,
     location: "Ivano-Frankivsk Region, Ukraine",
     like: 153,
@@ -10,15 +10,15 @@ export default [
   {
     id: "2",
     image: require("../../assets/images/postImg2.jpg"),
-    title: "Закат на Черном море",
+    title: "Захід на Чорному морі",
     comments: 3,
-    location: "Odessa-Mama Region, Ukraine",
+    location: "Ukraine",
     like: 200,
   },
   {
     id: "3",
     image: require("../../assets/images/postImg3.jpg"),
-    title: "Старый домик в Венеции",
+    title: "Старий будиночок в Венеції",
     comments: 50,
     location: "Rome, Italy",
     like: 200,
